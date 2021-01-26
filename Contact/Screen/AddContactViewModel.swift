@@ -14,7 +14,6 @@ class AddContactViewModel {
     var successRequest: (() -> ())?
     var failureRequest: (() -> ())?
     
-    var contact:ContactData?
     var listContact:[ContactData] = []
     var errorMessage:String = ""
     

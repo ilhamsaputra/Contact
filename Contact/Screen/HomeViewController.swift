@@ -63,9 +63,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let vc = DetailViewController()
-        //        vc.idMovie = self.viewmodel.listMovie[indexPath.row].id
-        //        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = DetailViewController()
+        vc.contact = self.viewmodel.listContact[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
